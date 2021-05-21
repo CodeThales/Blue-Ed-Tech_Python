@@ -1,21 +1,13 @@
-'''Ex02 - Dado uma string com uma frase informada
-pelo usuário (incluindo espaços em branco), conte 
-quantas vezes aparece as vogais a,e,i,o,u.'''
-frase = str(input('Digite uma frase: ')).lower()
-a = e = i = o = u = 0
-for c in frase:
-    if c == 'a':
-        a += 1
-    if c == 'e':
-        e += 1
-    if c == 'i':
-        i += 1
-    if c == 'o':
-        o += 1
-    if c == 'u':
-        u += 1
-print(f'A letra a foi encontrada {a} vezes na frase.')
-print(f'A letra e foi encontrada {e} vezes na frase.')
-print(f'A letra i foi encontrada {i} vezes na frase.')
-print(f'A letra o foi encontrada {o} vezes na frase.')
-print(f'A letra u foi encontrada {u} vezes na frase.')
+'''Ex02 - Desenvolva um programa que leia quatro
+valores pelo teclado e guarde-os em uma tupla. 
+No final, mostre:
+A) Quantas vezes apareceu o valor 9.
+B) Em que posição foi digitado o primeiro valor 3'''
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite outro número: '))
+n3 = int(input('Digite mais um número: '))
+n4 = int(input('Digite o último número: '))
+numeros = (n1, n2, n3, n4)
+print(f'Os números inseridos na Tupla foram {numeros}')
+print(f'O número 9 apareceu {numeros.count(9)} vezes.')
+print(f'O primeiro valor 3 apareceu na posição {numeros.index(3)}.')
